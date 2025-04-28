@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    cursor: pointer;
+}
+body{
+    background-color: #f1f2f4;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+  
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 2px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.icon{
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    margin-left: -143px;
+    cursor: pointer;
+   
+    height: 40px;
+    justify-content: center;
+    padding: 10px 10px;
+    align-items: center;
+    
+
+}
+   
+
+
+.search-bar{
+    width: 450px;
+    border: 1px solid black;
+    background-color: #f0f5ff;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    width: 591px;
+    height: 40px;
+    
+    /* width: 35vw;
+    height: 5vh;
+    border-radius: 8px;
+    border: none;
+    background-color: #f0f5ff; */
+}
+
+.search-bar input{
+    height: 40px;
+    width: 400px;
+    background-color: aliceblue;
+    border: 1px solid;
+    padding-left: 2px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    
+
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+    /* border: 1px solid; */
+}
+
+.account:hover{
+    border: 1px solid gray;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color:rgba(182, 179, 179, 0.5);
+    
+    
+}
+ h2{
+    font-size: 17px;
+    font-weight: 400;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.seller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.threedot{
+    padding-right: 7px;
+}
+.photos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    
+    background-color: white;
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+ #first .photos  img{
+    height: 70px;
+    width: 70px;
+    
+}
+.photos  .img h3{
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.photos .img{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.threedot{
+    cursor: pointer;
+    
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image Styles */
+.wrapper .img {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.wrapper .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the whole slider area */
+}
+
+/* Display the first image by default */
+#one:checked ~ .img-1 {
+    opacity: 1;
+}
+
+#two:checked ~ .img-2 {
+    opacity: 1;
+}
+
+#three:checked ~ .img-3 {
+    opacity: 1;
+}
+
+#four:checked ~ .img-4 {
+    opacity: 1;
+}
+
+#five:checked ~ .img-5 {
+    opacity: 1;
+}
+
+/* Slider Navigation */
+.slider {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider label {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight the selected slider dot */
+#one:checked ~ .slider .one,
+#two:checked ~ .slider .two,
+#three:checked ~ .slider .three,
+#four:checked ~ .slider .four,
+#five:checked ~ .slider .five {
+    background-color: #333;
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+    display: none;
+}
+#one{
+
+    cursor: pointer;
+    margin: 15px;
+}
+
+#phone{
+    
+    height: 400px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#phone .smartphone{
+    margin: 30px;
+    cursor: pointer;
+}
+#phone .smartphone h2{
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.phn{
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.phn img{
+   margin-bottom: 15px;
+    height: 186px;
+    width: 150px;
+}
+.phonephoto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#photocont{
+ 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-top: 15px;
+   background-color: white;
+   gap: 5px;
+
+}
+#photocont img{
+    height: 247px;
+    width: 461px;
+    cursor: pointer;
+    
+}
+#fashion{
+    height: 350px;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+    margin-top: 15px;
+}
+.fashiontitle{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.fashiontitle h2{
+    font-size: 20px;
+    font-weight: 900;
+
+
+    
+}
+.cloth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: 20px;
+
+}
+.cloth .clothpic{
+    border: 2px solid rgb(224 224 223);
+    width: 180px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cloth .clothpic img{
+    padding: 10px;
+    
+}
+#foter{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    margin-top: 15px;
+
+}
+#foter .footerclass h2{
+    font-weight: 100;
+    margin-top: 10px;
+    color: #878787;
+    margin-bottom: 10px;
+}
+#foter .footerclass p{
+    color:#878787 ;
+    font-size: 13px;
+    padding: 5px;
+}
+#foter .footerclass{
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+   
+    height: 330px;
+}
+#foter .footerclass a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
