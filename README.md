@@ -1,4 +1,5 @@
 Flipkart Clone (Frontend Only) - HTML & CSS
+live here : https://yogeshnaharwara.github.io/flipkart-clone-forntend/
 Overview
 This project is a frontend clone of the popular Indian e-commerce website Flipkart, built using only HTML and CSS.
 It replicates the look and basic structure of Flipkart’s homepage, including the navbar, product categories, banners, and product grids.
